@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaCV - Resume Builder</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Apna<span>CV</span></div>
+  <div class="tagline">Apna Resume. Apni Pehchaan.</div>
+</header>
+
+<main>
+  <section id="intro" class="screen">
+    <div class="hero">
+      <p class="eyebrow">SIMPLE RESUME BUILDER</p>
+      <h1>Create your resume <span>your way.</span></h1>
+      <p>Answer a few simple questions, choose a template, and build your resume with a live preview.</p>
+      <button class="primary" onclick="showQuestions()">Start Building →</button>
+    </div>
+  </section>
+
+  <section id="questions" class="screen hidden">
+    <div class="card question-card">
+      <p class="eyebrow">STEP 1</p>
+      <h2>Tell us a little about yourself</h2>
+      <label>What describes you best?
+        <select id="q1"><option>Student</option><option>Fresher</option><option>Working Professional</option><option>Career Changer</option></select>
+      </label>
+      <label>What are you creating this resume for?
+        <select id="q2"><option>Job</option><option>Internship</option><option>College Placement</option><option>Higher Studies</option><option>General Resume</option></select>
+      </label>
+      <label>What field are you targeting?
+        <select id="q3"><option>Software / IT</option><option>Data / AI</option><option>Business</option><option>Finance</option><option>Marketing</option><option>Design</option><option>Other</option></select>
+      </label>
+      <label>What style do you prefer?
+        <select id="q4"><option>ATS Friendly</option><option>Professional</option><option>Modern</option><option>Creative</option><option>Minimal</option></select>
+      </label>
+      <button class="primary" onclick="showTemplates()">Choose Template →</button>
+    </div>
+  </section>
+
+  <section id="templates" class="screen hidden">
+    <div class="section-head">
+      <div><p class="eyebrow">STEP 2</p><h2>Choose a template</h2></div>
+      <button class="secondary" onclick="showBuilder(1)">Skip →</button>
+    </div>
+    <div id="templateGrid" class="template-grid"></div>
+  </section>
+
+  <section id="builder" class="builder hidden">
+    <aside class="editor">
+      <div class="editor-head">
+        <div><p class="eyebrow">STEP 3</p><h2>Edit Resume</h2></div>
+        <button class="secondary" onclick="showTemplates()">Templates</button>
+      </div>
+
+      <div class="form-section">
+        <h3>Personal Details</h3>
+        <input id="name" placeholder="Full name" oninput="update()">
+        <input id="role" placeholder="Professional title / role" oninput="update()">
+        <input id="email" placeholder="Email" oninput="update()">
+        <input id="phone" placeholder="Phone" oninput="update()">
+        <input id="location" placeholder="Location" oninput="update()">
+        <input id="links" placeholder="LinkedIn / GitHub / Portfolio" oninput="update()">
+      </div>
+
+      <div class="form-section">
+        <h3>Profile / Summary</h3>
+        <textarea id="summary" placeholder="Write a short professional summary..." oninput="update()"></textarea>
+      </div>
+
+      <div class="form-section">
+        <div class="section-title"><h3>Education</h3><button class="small" onclick="addItem('education')">+ Add</button></div>
+        <div id="educationFields"></div>
+      </div>
+
+      <div class="form-section">
+        <div class="section-title"><h3>Skills</h3><button class="small" onclick="addItem('skills')">+ Add</button></div>
+        <div id="skillsFields"></div>
+      </div>
+
+      <div class="form-section">
+        <div class="section-title"><h3>Projects</h3><button class="small" onclick="addItem('projects')">+ Add</button></div>
+        <div id="projectsFields"></div>
+      </div>
+
+      <div class="form-section">
+        <div class="section-title"><h3>Experience</h3><button class="small" onclick="addItem('experience')">+ Add</button></div>
+        <div id="experienceFields"></div>
+      </div>
+
+      <div id="customSections"></div>
+
+      <button class="create-section" onclick="createSection()">＋ Create Section</button>
+
+      <div class="actions">
+        <button class="secondary" onclick="saveResume()">Save Resume</button>
+        <button class="primary" onclick="downloadPDF()">Download PDF</button>
+      </div>
+    </aside>
+
+    <section class="preview-area">
+      <div class="preview-tools">
+        <span>Live Preview</span>
+        <span id="templateLabel">Classic ATS</span>
+      </div>
+      <div id="resumePreview" class="resume classic"></div>
+    </section>
+  </section>
+</main>
+
+<div id="toast" class="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

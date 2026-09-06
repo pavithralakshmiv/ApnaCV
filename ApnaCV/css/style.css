@@ -1,0 +1,78 @@
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f6f7fb;color:#20242c}.topbar{height:72px;background:#fff;border-bottom:1px solid #e8eaf0;display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;z-index:10}.brand{font-size:25px;font-weight:800;letter-spacing:-1px}.brand span{color:#6c63ff}.tagline{color:#777;font-size:13px}.screen{min-height:calc(100vh - 72px);padding:55px 7%}.hidden{display:none}.hero{max-width:780px;margin:10vh auto;text-align:center}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:#6c63ff}.hero h1{font-size:55px;line-height:1.05;margin:14px 0}.hero h1 span{color:#6c63ff}.hero p:not(.eyebrow){font-size:18px;color:#666;line-height:1.7}.primary,.secondary,.small,.create-section{border:0;border-radius:10px;padding:12px 18px;font-weight:700;cursor:pointer;transition:.2s}.primary{background:#6c63ff;color:white}.primary:hover{transform:translateY(-2px);box-shadow:0 8px 22px #6c63ff30}.secondary{background:#eef0f6;color:#343945}.small{background:#ecebff;color:#5a52e8;padding:7px 11px}.card{background:white;border:1px solid #e7e9ef;border-radius:18px;box-shadow:0 12px 35px #20242c0b}.question-card{max-width:650px;margin:auto;padding:35px}.question-card h2{font-size:32px;margin-top:4px}.question-card label{display:block;font-weight:700;margin:22px 0}.question-card select,input,textarea{width:100%;border:1px solid #dfe2ea;border-radius:9px;padding:12px;margin-top:8px;font:inherit;background:#fff}.question-card .primary{margin-top:8px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.section-head h2{margin:4px 0;font-size:32px}.template-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}.template-card{background:#fff;border:1px solid #e5e7ed;border-radius:14px;padding:13px;cursor:pointer;transition:.2s}.template-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #20242c12;border-color:#6c63ff}.mini{height:210px;border:1px solid #ddd;background:#fafafa;padding:14px;overflow:hidden}.mini .line{height:5px;background:#d8d8df;margin:7px 0;width:85%}.mini .title{height:10px;background:#444;width:60%;margin-bottom:12px}.template-card strong{display:block;margin:11px 2px 3px}.template-card small{color:#777}.builder{display:grid;grid-template-columns:minmax(350px,520px) 1fr;min-height:calc(100vh - 72px)}.editor{background:#fff;border-right:1px solid #e5e7ed;padding:25px;overflow:auto;max-height:calc(100vh - 72px)}.editor-head,.section-title{display:flex;justify-content:space-between;align-items:center}.editor-head h2{margin:3px 0 18px}.form-section{border-top:1px solid #eceef3;padding:20px 0}.form-section h3{margin:0 0 10px}.form-section textarea{min-height:95px;resize:vertical}.item{border:1px solid #e4e6ed;border-radius:10px;padding:10px;margin:10px 0;position:relative}.item .remove{position:absolute;right:8px;top:8px;background:#fff;border:0;color:#d55;cursor:pointer}.item input,.item textarea{padding:9px;margin-top:5px}.create-section{width:100%;background:#f0efff;color:#5b53e9;margin:8px 0 20px}.actions{display:flex;gap:10px;padding-bottom:20px}.preview-area{background:#eef0f5;padding:25px;overflow:auto}.preview-tools{display:flex;justify-content:space-between;margin-bottom:15px;color:#626775;font-size:13px;font-weight:700}.resume{background:white;width:794px;min-height:1123px;margin:auto;padding:55px;box-shadow:0 10px 35px #20242c18}.resume h1{margin:0;font-size:30px}.resume .role{font-size:15px;color:#666;margin:5px 0 12px}.contact{font-size:11px;color:#666;border-bottom:1px solid #ddd;padding-bottom:13px}.resume-section{margin-top:22px}.resume-section h2{font-size:13px;letter-spacing:1.2px;border-bottom:1px solid #bbb;padding-bottom:5px;margin-bottom:9px}.resume-section p{font-size:12px;line-height:1.55;margin:5px 0}.resume-section .entry{margin:8px 0}.resume-section .entry b{font-size:12px}.resume.modern h1{font-size:35px;color:#6c63ff}.resume.modern .resume-section h2{color:#6c63ff;border-bottom:2px solid #6c63ff}.resume.creative{border-top:10px solid #6c63ff}.resume.creative h1{font-size:34px}.resume.sidebar{padding-left:210px;position:relative}.resume.sidebar:before{content:"";position:absolute;left:0;top:0;bottom:0;width:170px;background:#f1f0ff}.toast{position:fixed;bottom:25px;right:25px;background:#222;color:#fff;padding:12px 18px;border-radius:9px;opacity:0;transform:translateY(10px);transition:.25s}.toast.show{opacity:1;transform:translateY(0)}@media(max-width:900px){.builder{grid-template-columns:1fr}.editor{max-height:none;border-right:0}.preview-area{min-height:800px}.resume{transform-origin:top left;transform:scale(.8);margin-left:0}.tagline{display:none}.hero h1{font-size:40px}}
+
+/* ===== 60 DISTINCT RESUME TEMPLATE STYLES ===== */
+.resume{font-family:Arial,sans-serif;color:#20242c}
+.resume.t1{font-family:Georgia,serif}.resume.t1 h1{font-size:34px;text-align:center}.resume.t1 .contact{text-align:center}
+.resume.t2{font-family:Arial,sans-serif}.resume.t2 h1{font-size:31px;text-transform:uppercase}.resume.t2 .resume-section h2{border-left:4px solid #333;padding-left:8px}
+.resume.t3{font-family:Verdana,sans-serif}.resume.t3 h1{letter-spacing:2px}.resume.t3 .resume-section h2{letter-spacing:2px}
+.resume.t4{font-family:Georgia,serif}.resume.t4 h1{font-size:38px}.resume.t4 .resume-section h2{text-transform:uppercase}
+.resume.t5{font-family:Trebuchet MS,sans-serif}.resume.t5 h1{font-size:32px}.resume.t5 .resume-section h2{background:#f0f0f0;padding:7px}
+.resume.t6{font-family:Arial,sans-serif}.resume.t6 h1{font-size:28px}.resume.t6 .resume-section{margin-top:15px}
+.resume.t7{font-family:Calibri,Arial,sans-serif}.resume.t7 h1{font-weight:500}.resume.t7 .resume-section h2{font-weight:500;border-bottom:0}
+.resume.t8{font-family:Georgia,serif}.resume.t8 .resume-section h2{font-size:15px;text-transform:uppercase;border-bottom:2px solid #333}
+.resume.t9{font-family:Arial,sans-serif}.resume.t9 h1{font-size:29px}.resume.t9 .contact{padding:8px 0}
+.resume.t10{font-family:Tahoma,sans-serif}.resume.t10 h1{font-size:33px}.resume.t10 .resume-section h2{border-bottom:3px double #777}
+
+.resume.t11{font-family:Trebuchet MS,sans-serif}.resume.t11 h1{font-size:34px}.resume.t11 .resume-section h2{color:#4b5563}
+.resume.t12{font-family:Arial,sans-serif}.resume.t12 h1{font-size:30px}.resume.t12 .resume-section h2{background:#f4f4f4;padding:6px;border-radius:4px}
+.resume.t13{font-family:Calibri,Arial,sans-serif}.resume.t13 h1{font-size:32px;text-align:center}.resume.t13 .contact{text-align:center}
+.resume.t14{font-family:Georgia,serif}.resume.t14 h1{font-size:36px}.resume.t14 .resume-section h2{font-size:14px}
+.resume.t15{font-family:Arial,sans-serif}.resume.t15 h1{font-size:31px}.resume.t15 .resume-section{border-left:2px solid #ddd;padding-left:12px}
+.resume.t16{font-family:Georgia,serif}.resume.t16 .resume-section h2{font-size:16px;text-transform:none}
+.resume.t17{font-family:Arial,sans-serif}.resume.t17 h1{font-size:32px}.resume.t17 .resume-section h2{border-bottom:0;font-size:12px;letter-spacing:2px}
+.resume.t18{font-family:Trebuchet MS,sans-serif}.resume.t18 h1{font-size:35px}.resume.t18 .entry{padding-bottom:5px;border-bottom:1px dotted #ccc}
+.resume.t19{font-family:Verdana,sans-serif}.resume.t19 h1{font-size:33px}.resume.t19 .resume-section h2{border-bottom:2px solid #555}
+.resume.t20{font-family:Arial,sans-serif}.resume.t20 h1{font-size:34px}.resume.t20 .contact{font-size:12px}
+
+.resume.t21{font-family:Arial,sans-serif}.resume.t21 h1{font-size:37px}.resume.t21 .resume-section h2{border-bottom:2px solid #6c63ff}
+.resume.t22{font-family:Arial,sans-serif}.resume.t22 h1{font-size:32px}.resume.t22 .resume-section h2{color:#6c63ff}
+.resume.t23{font-family:Calibri,Arial,sans-serif}.resume.t23 h1{font-size:34px}.resume.t23 .resume-section h2{border-left:5px solid #6c63ff;padding-left:8px}
+.resume.t24{font-family:Arial,sans-serif}.resume.t24 h1{font-size:33px}.resume.t24 .resume-section{border-left:1px solid #6c63ff;padding-left:14px}
+.resume.t25{font-family:Verdana,sans-serif}.resume.t25 h1{font-size:30px;letter-spacing:3px}.resume.t25 .resume-section h2{font-size:11px;letter-spacing:3px}
+.resume.t26{font-family:Arial,sans-serif}.resume.t26 h1{font-size:40px}.resume.t26 .contact{padding:10px 0}
+.resume.t27{font-family:Arial,sans-serif}.resume.t27 h1{font-size:31px}.resume.t27 .resume-section h2{background:#f1f1f1;padding:5px}
+.resume.t28{font-family:Trebuchet MS,sans-serif}.resume.t28 h1{font-size:35px}.resume.t28 .resume-section h2{font-size:14px;border-bottom:0}
+.resume.t29{font-family:Arial,sans-serif}.resume.t29 h1{font-size:29px}.resume.t29 .resume-section h2{border-bottom:2px solid #222}
+.resume.t30{font-family:Georgia,serif}.resume.t30 h1{font-size:36px}.resume.t30 .resume-section h2{font-family:Arial,sans-serif}
+
+.resume.t31{font-family:Consolas,monospace}.resume.t31 h1{font-size:30px}.resume.t31 .resume-section h2{font-family:Consolas,monospace;letter-spacing:0}
+.resume.t32{font-family:Arial,sans-serif}.resume.t32 h1{font-size:38px}.resume.t32 .resume-section h2{color:#2563eb;border-bottom:2px solid #2563eb}
+.resume.t33{font-family:Arial,sans-serif}.resume.t33 h1{font-size:32px}.resume.t33 .resume-section h2{border-left:4px solid #2563eb;padding-left:8px}
+.resume.t34{font-family:Verdana,sans-serif}.resume.t34 h1{font-size:29px}.resume.t34 .resume-section h2{font-size:12px;letter-spacing:2px}
+.resume.t35{font-family:Calibri,Arial,sans-serif}.resume.t35 h1{font-size:35px}.resume.t35 .resume-section h2{color:#0f766e}
+.resume.t36{font-family:Arial,sans-serif}.resume.t36 h1{font-size:33px}.resume.t36 .resume-section h2{border-bottom:3px solid #0f766e}
+.resume.t37{font-family:Consolas,monospace}.resume.t37 h1{font-size:28px}.resume.t37 .resume-section h2{font-size:12px}
+.resume.t38{font-family:Arial,sans-serif}.resume.t38 h1{font-size:36px}.resume.t38 .resume-section h2{background:#eef2ff;padding:7px}
+.resume.t39{font-family:Trebuchet MS,sans-serif}.resume.t39 h1{font-size:32px}.resume.t39 .resume-section h2{border-bottom:0;text-decoration:underline}
+.resume.t40{font-family:Arial,sans-serif}.resume.t40 h1{font-size:34px}.resume.t40 .resume-section h2{border-left:6px solid #111;padding-left:9px}
+
+.resume.t41{font-family:Georgia,serif}.resume.t41 h1{font-size:39px}.resume.t41 .resume-section h2{text-transform:uppercase}
+.resume.t42{font-family:Arial,sans-serif}.resume.t42 h1{text-align:center;font-size:35px}.resume.t42 .contact{text-align:center}
+.resume.t43{font-family:Verdana,sans-serif}.resume.t43 h1{font-size:31px;letter-spacing:2px}.resume.t43 .resume-section h2{letter-spacing:2px}
+.resume.t44{font-family:Georgia,serif}.resume.t44 h1{font-size:36px;font-style:italic}.resume.t44 .resume-section h2{font-style:normal}
+.resume.t45{font-family:Trebuchet MS,sans-serif}.resume.t45 h1{font-size:34px}.resume.t45 .resume-section h2{border-bottom:0;padding-bottom:2px}
+.resume.t46{font-family:Arial,sans-serif}.resume.t46 h1{font-size:38px}.resume.t46 .resume-section{margin-top:27px}
+.resume.t47{font-family:Georgia,serif}.resume.t47 h1{font-size:32px}.resume.t47 .resume-section h2{font-size:15px;border-bottom:1px solid #555}
+.resume.t48{font-family:Arial,sans-serif}.resume.t48 h1{font-size:40px}.resume.t48 .resume-section h2{font-size:12px;letter-spacing:2px}
+.resume.t49{font-family:Verdana,sans-serif}.resume.t49 h1{font-size:33px}.resume.t49 .resume-section h2{border-left:3px solid #777;padding-left:8px}
+.resume.t50{font-family:Georgia,serif}.resume.t50 h1{font-size:37px}.resume.t50 .resume-section h2{font-size:14px}
+
+.resume.t51{font-family:Georgia,serif}.resume.t51 h1{font-size:34px;text-align:center}.resume.t51 .contact{text-align:center}
+.resume.t52{font-family:Arial,sans-serif}.resume.t52 h1{font-size:31px}.resume.t52 .resume-section h2{text-transform:uppercase;letter-spacing:1px}
+.resume.t53{font-family:Arial,sans-serif}.resume.t53 h1{font-size:34px}.resume.t53 .resume-section h2{border-bottom:2px solid #333}
+.resume.t54{font-family:Trebuchet MS,sans-serif}.resume.t54 h1{font-size:32px}.resume.t54 .resume-section h2{background:#f3f3f3;padding:6px}
+.resume.t55{font-family:Arial,sans-serif}.resume.t55 h1{font-size:36px}.resume.t55 .resume-section h2{border-left:5px solid #444;padding-left:8px}
+.resume.t56{font-family:Georgia,serif}.resume.t56 h1{font-size:38px}.resume.t56 .resume-section h2{font-size:15px}
+.resume.t57{font-family:Verdana,sans-serif}.resume.t57 h1{font-size:30px;letter-spacing:1px}.resume.t57 .resume-section h2{font-size:11px;letter-spacing:2px}
+.resume.t58{font-family:Calibri,Arial,sans-serif}.resume.t58 h1{font-size:33px}.resume.t58 .resume-section{margin-top:18px}
+.resume.t59{font-family:Arial,sans-serif}.resume.t59 h1{font-size:35px}.resume.t59 .resume-section h2{border-bottom:3px double #555}
+.resume.t60{font-family:Georgia,serif}.resume.t60 h1{font-size:40px}.resume.t60 .resume-section h2{text-transform:uppercase}
+
+.mini{position:relative}.mini .line{height:5px;background:#cfd2da;margin:7px 0;width:85%}.mini .line.short{width:45%}.mini .line.medium{width:65%}.mini .title{height:11px;background:#333;width:55%;margin-bottom:12px}
+.mini-center .title,.mini-center .line{margin-left:auto;margin-right:auto}.mini-center .title{width:48%}
+.mini-sidebar{padding-left:48px}.mini-sidebar:before{content:"";position:absolute;left:0;top:0;bottom:0;width:35px;background:#e7e7ee}
+.mini-split{display:grid;grid-template-columns:1fr 1fr;gap:7px}.mini-split .title{grid-column:1/3;width:65%}.mini-split .line{width:100%}
+.mini-timeline{border-left:3px solid #bbb;padding-left:10px}.mini-timeline .title{width:70%}
+.mini-bold .title{height:17px;width:80%;background:#222}.mini-bold .line{height:3px}
+.mini-minimal .line{height:3px;margin:11px 0}.mini-minimal .title{background:#777;height:7px}
+.mini-boxed{border:1px solid #ccc;padding:9px}.mini-boxed .title{width:60%}
